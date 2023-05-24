@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#000000">
+  <title>Pixel Visualization - Ranjan Sharma</title>
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Pixel Visualization - Ranjan Sharma" />
+  <meta property="og:description" content="This is a visualization of pixels coded by Ranjan Sharma" />
+  <meta property="og:image" content="https://pixel.joonshakya.com.np/favicon/thumbnail.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:url" content="https://pixel.ranjansharma.info.np/" />
+  <meta property="fb:app_id" content="1265498347173300" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="./favicon/favicon.ico" />
+  <link rel="icon" type="image/gif" href="./favicon/animated_favicon1.gif" />
+  <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png" />
+
+  <script language="javascript" type="text/javascript" src="./js/p5.min.js"></script>
+  <!-- <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script> -->
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <script language="javascript" src="./js/p5.dom.min.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+    html {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, .05);
+    }
+
+    body {
+      background: rgb(51, 51, 51);
+      margin: 0;
+    }
+
+    input {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 24px;
+      background: linear-gradient(#00000000 25%, #d3d3d3, #00000000 75%);
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+
+    input:hover {
+      opacity: 1;
+    }
+
+    input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      background: #4CAF50;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    input::-moz-range-thumb {
+      width: 24px;
+      height: 24px;
+      background: #4CAF50;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<script language="javascript" type="text/javascript" src="./js/sketch.js?re=1"></script>
+
+<body>
+  <script>
+    window.addEventListener('load', e => {
+      registerSW();
+
+      function registerSW() {
+        if ('serviceWorker' in navigator) {
+          try {
+            navigator.serviceWorker.register("sw.js");
+          } catch (e) {
+            alert('ServiceWorker registration failed. Sorry about that.');
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
